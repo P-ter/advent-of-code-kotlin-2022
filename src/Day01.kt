@@ -26,7 +26,7 @@ fun main() {
             }
         }
         runningTotal.sortDescending()
-        return runningTotal[0] + runningTotal[1] + runningTotal[2]
+        return runningTotal.take(3).sum()
     }
 
     val testInput = readInput("dayone")
